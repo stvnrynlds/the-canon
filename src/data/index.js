@@ -1,287 +1,292 @@
-export const OLD_TESTAMENT = [
-	{
+const books = {
+	"GENE": {
 		"name": "Genesis",
-		"aliases": [
-			"Gen"
-		]
+		"aliases": [],
+        "groups": [
+            "Pentateuch"
+        ]
 	},
-	{
+	"EXOD": {
 		"name": "Exodus",
-		"aliases": [
-			"Exod",
-			"Ex",
-			"Exo"
-		]
-	},
-	{
+		"aliases": [],
+        "groups": [
+            "Pentateuch"
+        ]
+    },
+    "LEVI": {
 		"name": "Leviticus",
-		"aliases": [
-			"Lev"
-		]
+		"aliases": [],
+        "groups": [
+            "Pentateuch"
+        ]
 	},
-	{
+	"NUMB": {
 		"name": "Numbers",
-		"aliases": [
-			"Num"
-		]
+		"aliases": [],
+        "groups": [
+			"Pentateuch",
+			"Law"
+        ]
 	},
-	{
+	"DEUT": {
 		"name": "Deuteronomy",
-		"aliases": [
-			"Deut"
-		]
+		"aliases": [],
+        "groups": [
+			"Pentateuch",
+			"Law",
+        ]
 	},
-	{
+	"JOSH": {
 		"name": "Joshua",
-		"aliases": [
-			"Josh"
-		]
+		"aliases": []
 	},
-	{
+	"JUDG": {
 		"name": "Judges",
-		"aliases": [
-			"Judg"
-		]
+		"aliases": []
 	},
-	{
+	"RUTH": {
 		"name": "Ruth",
 		"aliases": []
 	},
-	{
+	"1SAM": {
 		"name": "1 Samuel",
 		"aliases": [
-			"1 Sam",
-			"1st Sam",
-			"1st Samuel",
-			"First Samuel"
+            "1 Kings",
+			"1 Kingdoms"
 		]
 	},
-	{
+	"2SAM": {
 		"name": "2 Samuel",
 		"aliases": [
-			"2 Sam",
-			"2nd Sam",
-			"2nd Samuel",
-			"Second Samuel"
+            "2 Kings",
+			"2 Kingdoms"
 		]
 	},
-	{
+	"1KIN": {
 		"name": "1 Kings",
 		"aliases": [
-			"1 Kgs",
-			"1st Kgs",
-			"1st Kings",
-			"First Kings"
+            "3 Kings",
+			"3 Kingdoms"
 		]
 	},
-	{
+	"2KIN": {
 		"name": "2 Kings",
 		"aliases": [
-			"2 Kgs",
-			"2nd Kgs",
-			"2nd Kings",
-			"Second Kings"
+            "4 Kings",
+            "4 Kingdoms"
 		]
 	},
-	{
+	"1CHR": {
 		"name": "1 Chronicles",
 		"aliases": [
-			"1 Chr",
-			"1st Chr",
-			"1st Chronicles",
-			"First Chronicles"
+			"1 Paraleipomenon"
 		]
 	},
-	{
+	"2CHR": {
 		"name": "2 Chronicles",
 		"aliases": [
-			"2 Chr",
-			"2nd Chr",
-			"2nd Chronicles",
-			"Second Chronicles"
+			"2 Paraleipomenon"
 		]
 	},
-	{
+	"EZRA": {
 		"name": "Ezra",
 		"aliases": [
-			"Ezra"
-		]
+            "1 Esdras"
+        ]
 	},
-	{
+	"NEHE": {
 		"name": "Nehemiah",
 		"aliases": [
-			"Neh"
+			"2 Esdras"
 		]
 	},
-	{
-		"name": "Esther",
+	"TOBI": {
+		"name": "Tobit",
 		"aliases": [
-			"Esth",
-			"Est"
+			"Tobias"
 		]
 	},
-	{
+	"JUDI": {
+		"name": "Judith",
+		"aliases": []
+	},
+	"ESTH": {
+		"name": "Esther",
+		"aliases": []
+	},
+	"1MAC": {
+		"name": "1 Maccabees",
+		"aliases": []
+	},
+	"2MAC": {
+		"name": "2 Maccabees",
+		"aliases": []
+	},
+	"3MAC": {
+		"name": "3 Maccabees",
+		"aliases": []
+	},
+	"3ESD": {
+		"name": "3 Esdras",
+		"aliases": []
+	},
+	"4MAC": {
+		"name": "4 Maccabees",
+		"aliases": []
+	},
+	"JOB": {
 		"name": "Job",
 		"aliases": []
 	},
-	{
+	"PSAL": {
 		"name": "Psalms",
 		"aliases": [
-			"Ps",
-			"Psalm"
-		]
+            "Psalter"
+        ]
 	},
-	{
+	"PROV": {
 		"name": "Proverbs",
-		"aliases": [
-			"Prov",
-			"Pro"
-		]
+		"aliases": []
 	},
-	{
+	"ECCL": {
 		"name": "Ecclesiastes",
-		"aliases": [
-			"Eccl",
-			"Ecc"
-		]
+		"aliases": []
 	},
-	{
+	"SONG": {
 		"name": "Song of Solomon",
 		"aliases": [
-			"Song",
-			"Song of Songs"
+			"Song of Songs",
+			"Canticle of Canticles"
 		]
 	},
-	{
+	"WISD": {
+		"name": "Wisdom",
+		"aliases": []
+	},
+	"SIRA": {
+		"name": "Sirach",
+		"aliases": [
+			"Ecclesiasticus"
+		]
+	},
+	"ISAI":{
 		"name": "Isaiah",
 		"aliases": [
-			"Isa"
+			"Isaias"
 		]
 	},
-	{
+	"JERE": {
 		"name": "Jeremiah",
 		"aliases": [
-			"Jer"
+			"Jeremias"
 		]
 	},
-	{
+	"LAME": {
 		"name": "Lamentations",
-		"aliases": [
-			"Lam"
-		]
+		"aliases": []
 	},
-	{
+	"BARU": {
+		"name": "Baruch",
+		"aliases": []
+	},
+	"EZEK": {
 		"name": "Ezekiel",
-		"aliases": [
-			"Ezek"
-		]
+		"aliases": []
 	},
-	{
+	"DANI": {
 		"name": "Daniel",
-		"aliases": [
-			"Dan"
-		]
+		"aliases": []
 	},
-	{
+	"HOSE": {
 		"name": "Hosea",
 		"aliases": [
-			"Hos"
+			"Osee"
 		]
 	},
-	{
+	"JOEL": {
 		"name": "Joel",
 		"aliases": []
 	},
-	{
+	"AMOS": {
 		"name": "Amos",
 		"aliases": []
 	},
-	{
+	"OBAD": {
 		"name": "Obadiah",
 		"aliases": [
-			"Obad",
-			"Oba"
 		]
 	},
-	{
+	"JONA": {
 		"name": "Jonah",
 		"aliases": [
-			"Jon"
+			"Jonas"
 		]
 	},
-	{
+	"MICA": {
 		"name": "Micah",
 		"aliases": [
-			"Mic"
+			"Michaeas"
 		]
 	},
-	{
+	"NAHU": {
 		"name": "Nahum",
 		"aliases": [
-			"Nah"
 		]
 	},
-	{
+	"HABA": {
 		"name": "Habakkuk",
 		"aliases": [
-			"Hab"
 		]
 	},
-	{
+	"ZEPH": {
 		"name": "Zephaniah",
 		"aliases": [
-			"Zeph"
 		]
 	},
-	{
+	"HAGG": {
 		"name": "Haggai",
 		"aliases": [
-			"Hag"
 		]
 	},
-	{
+	"ZECH": {
 		"name": "Zechariah",
 		"aliases": [
-			"Zech"
 		]
-    }
-];
-
-export const NEW_TESTAMENT = [{
+    },
+    "MALA": {
 		"name": "Malachi",
 		"aliases": [
-			"Mal"
 		]
 	},
-	{
+	"MATT": {
 		"name": "Matthew",
 		"aliases": [
 			"Matt"
 		]
 	},
-	{
+	"MARK": {
 		"name": "Mark",
 		"aliases": []
 	},
-	{
+	"LUKE": {
 		"name": "Luke",
 		"aliases": []
 	},
-	{
+	"JOHN": {
 		"name": "John",
 		"aliases": []
 	},
-	{
+	"ACTS": {
 		"name": "Acts",
 		"aliases": []
 	},
-	{
+	"ROMA": {
 		"name": "Romans",
 		"aliases": [
 			"Rom"
 		]
 	},
-	{
+	"1COR": {
 		"name": "1 Corinthians",
 		"aliases": [
 			"1 Cor",
@@ -290,7 +295,7 @@ export const NEW_TESTAMENT = [{
 			"First Corinthians"
 		]
 	},
-	{
+	"2COR": {
 		"name": "2 Corinthians",
 		"aliases": [
 			"2 Cor",
@@ -299,135 +304,86 @@ export const NEW_TESTAMENT = [{
 			"Second Corinthians"
 		]
 	},
-	{
+	"GALA": {
 		"name": "Galatians",
 		"aliases": [
 			"Gal"
 		]
 	},
-	{
+	"EPHE": {
 		"name": "Ephesians",
-		"aliases": [
-			"Eph"
-		]
+		"aliases": []
 	},
-	{
+	"PHIL": {
 		"name": "Philippians",
-		"aliases": [
-			"Phil"
-		]
+		"aliases": []
 	},
-	{
+	"COLO": {
 		"name": "Colossians",
-		"aliases": [
-			"Col"
-		]
+		"aliases": []
 	},
-	{
+	"1THE": {
 		"name": "1 Thessalonians",
-		"aliases": [
-			"1 Thess",
-			"1st Thess",
-			"1st Thessalonians",
-			"First Thessalonians"
-		]
+		"aliases": []
 	},
-	{
+	"2THE": {
 		"name": "2 Thessalonians",
-		"aliases": [
-			"2 Thess",
-			"2nd Thess",
-			"2nd Thessalonians",
-			"Second Thessalonians"
-		]
+		"aliases": []
 	},
-	{
+	"1TIM": {
 		"name": "1 Timothy",
-		"aliases": [
-			"1 Tim",
-			"1st Tim",
-			"1st Timothy",
-			"First Timothy"
-		]
+		"aliases": []
 	},
-	{
+	"2TIM": {
 		"name": "2 Timothy",
-		"aliases": [
-			"2 Tim",
-			"2nd Tim",
-			"2nd Timothy",
-			"Second Timothy"
-		]
+		"aliases": []
 	},
-	{
+	"TITU": {
 		"name": "Titus",
 		"aliases": []
 	},
-	{
+	"PHIL": {
 		"name": "Philemon",
-		"aliases": [
-			"Phlm"
-		]
+		"aliases": []
 	},
-	{
+	"HEBR": {
 		"name": "Hebrews",
-		"aliases": [
-			"Heb"
-		]
+		"aliases": []
 	},
-	{
+	"JAME": {
 		"name": "James",
-		"aliases": [
-			"Jas"
-		]
+		"aliases": []
 	},
-	{
+	"1PET": {
 		"name": "1 Peter",
-		"aliases": [
-			"1 Pet",
-			"1st Pet",
-			"1st Peter",
-			"First Peter"
-		]
+		"aliases": []
 	},
-	{
+	"2PET": {
 		"name": "2 Peter",
-		"aliases": [
-			"2 Pet",
-			"2nd Pet",
-			"2nd Peter",
-			"Second Peter"
-		]
+		"aliases": []
 	},
-	{
+	"1JOH": {
 		"name": "1 John",
-		"aliases": [
-			"1st John",
-			"First John"
-		]
+		"aliases": []
 	},
-	{
+	"2JOH": {
 		"name": "2 John",
-		"aliases": [
-			"2nd John",
-			"Second John"
-		]
+		"aliases": []
 	},
-	{
+	"3JOH": {
 		"name": "3 John",
-		"aliases": [
-			"3rd John",
-			"Third John"
-		]
+		"aliases": []
 	},
-	{
+	"JUDE": {
 		"name": "Jude",
 		"aliases": []
 	},
-	{
+	"REVE": {
 		"name": "Revelation",
 		"aliases": [
-			"Rev"
+			"The Apocalypse"
 		]
 	}
-];
+};
+
+export default books;

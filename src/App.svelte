@@ -1,20 +1,18 @@
 <script>
 	export let name;
 
-	import { OLD_TESTAMENT, NEW_TESTAMENT } from "./data";
+	import books from "./data";
 	import { onMount } from "svelte";
+
+	const gospels = ['MATT', 'MARK', 'LUKE', 'JOHN'];
 	
 </script>
 
 <main>
 <h1>The Canons</h1>
 	<h2>Old Testament</h2>
-	{#each OLD_TESTAMENT as book}
-		<li>{book.name}</li>
-	{/each}
-	<h2>New NEW_TESTAMENT</h2>
-	{#each NEW_TESTAMENT as book}
-		<li>{book.name}</li>
+	{#each gospels as gospel}
+		<li>{books[gospel].name}</li>
 	{/each}
 	<button>Show Only Old Testament</button>
 	<h1>Hello {name}!</h1>
