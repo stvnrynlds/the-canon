@@ -3,6 +3,7 @@ const books = {
 		"name": "Genesis",
 		"aliases": [],
         "groups": [
+			"OT",
             "Pentateuch"
         ]
 	},
@@ -10,6 +11,7 @@ const books = {
 		"name": "Exodus",
 		"aliases": [],
         "groups": [
+			"OT",
             "Pentateuch"
         ]
     },
@@ -17,6 +19,7 @@ const books = {
 		"name": "Leviticus",
 		"aliases": [],
         "groups": [
+			"OT",
             "Pentateuch"
         ]
 	},
@@ -24,6 +27,7 @@ const books = {
 		"name": "Numbers",
 		"aliases": [],
         "groups": [
+			"OT",
 			"Pentateuch",
 			"Law"
         ]
@@ -32,27 +36,41 @@ const books = {
 		"name": "Deuteronomy",
 		"aliases": [],
         "groups": [
+			"OT",
 			"Pentateuch",
-			"Law",
+			"Law"
         ]
 	},
 	"JOSH": {
 		"name": "Joshua",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"JUDG": {
 		"name": "Judges",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"RUTH": {
 		"name": "Ruth",
-		"aliases": []
+		"aliases": [
+		],
+		"groups": [
+			"OT"
+		]
 	},
 	"1SAM": {
 		"name": "1 Samuel",
 		"aliases": [
             "1 Kings",
 			"1 Kingdoms"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"2SAM": {
@@ -60,6 +78,9 @@ const books = {
 		"aliases": [
             "2 Kings",
 			"2 Kingdoms"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"1KIN": {
@@ -67,6 +88,9 @@ const books = {
 		"aliases": [
             "3 Kings",
 			"3 Kingdoms"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"2KIN": {
@@ -74,314 +98,488 @@ const books = {
 		"aliases": [
             "4 Kings",
             "4 Kingdoms"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"1CHR": {
 		"name": "1 Chronicles",
 		"aliases": [
 			"1 Paraleipomenon"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"2CHR": {
 		"name": "2 Chronicles",
 		"aliases": [
 			"2 Paraleipomenon"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"EZRA": {
 		"name": "Ezra",
 		"aliases": [
             "1 Esdras"
-        ]
+		],
+		"groups": [
+			"OT"
+		]
 	},
 	"NEHE": {
 		"name": "Nehemiah",
 		"aliases": [
 			"2 Esdras"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"TOBI": {
 		"name": "Tobit",
 		"aliases": [
 			"Tobias"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"JUDI": {
 		"name": "Judith",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"ESTH": {
 		"name": "Esther",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"1MAC": {
 		"name": "1 Maccabees",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"2MAC": {
 		"name": "2 Maccabees",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"3MAC": {
 		"name": "3 Maccabees",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"3ESD": {
 		"name": "3 Esdras",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"4MAC": {
 		"name": "4 Maccabees",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"JOB": {
 		"name": "Job",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"PSAL": {
 		"name": "Psalms",
-		"aliases": [
-            "Psalter"
-        ]
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"PROV": {
 		"name": "Proverbs",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"ECCL": {
 		"name": "Ecclesiastes",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"SONG": {
 		"name": "Song of Solomon",
 		"aliases": [
 			"Song of Songs",
 			"Canticle of Canticles"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"WISD": {
 		"name": "Wisdom",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"SIRA": {
 		"name": "Sirach",
 		"aliases": [
 			"Ecclesiasticus"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"ISAI":{
 		"name": "Isaiah",
 		"aliases": [
 			"Isaias"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"JERE": {
 		"name": "Jeremiah",
 		"aliases": [
 			"Jeremias"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"LAME": {
 		"name": "Lamentations",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"BARU": {
 		"name": "Baruch",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"EZEK": {
 		"name": "Ezekiel",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"DANI": {
 		"name": "Daniel",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"HOSE": {
 		"name": "Hosea",
 		"aliases": [
 			"Osee"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"JOEL": {
 		"name": "Joel",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"AMOS": {
 		"name": "Amos",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"OT"
+		]
 	},
 	"OBAD": {
 		"name": "Obadiah",
 		"aliases": [
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"JONA": {
 		"name": "Jonah",
 		"aliases": [
 			"Jonas"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"MICA": {
 		"name": "Micah",
 		"aliases": [
 			"Michaeas"
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"NAHU": {
 		"name": "Nahum",
 		"aliases": [
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"HABA": {
 		"name": "Habakkuk",
 		"aliases": [
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"ZEPH": {
 		"name": "Zephaniah",
 		"aliases": [
+		],
+		"groups": [
+			"OT"
 		]
 	},
 	"HAGG": {
 		"name": "Haggai",
-		"aliases": [
+		"aliases": [],
+		"groups": [
+			"OT"
 		]
 	},
 	"ZECH": {
 		"name": "Zechariah",
-		"aliases": [
+		"aliases": [],
+		"groups": [
+			"OT"
 		]
     },
     "MALA": {
 		"name": "Malachi",
-		"aliases": [
+		"aliases": [],
+		"groups": [
+			"OT"
 		]
 	},
 	"MATT": {
 		"name": "Matthew",
-		"aliases": [
-			"Matt"
+		"aliases": [],
+		"groups": [
+			"NT"
 		]
 	},
 	"MARK": {
 		"name": "Mark",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"LUKE": {
 		"name": "Luke",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"JOHN": {
 		"name": "John",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"ACTS": {
 		"name": "Acts",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"ROMA": {
 		"name": "Romans",
-		"aliases": [
-			"Rom"
+		"aliases": [],
+		"groups": [
+			"NT"
 		]
 	},
 	"1COR": {
 		"name": "1 Corinthians",
-		"aliases": [
-			"1 Cor",
-			"1st Cor",
-			"1st Corinthians",
-			"First Corinthians"
+		"aliases": [],
+		"groups": [
+			"NT"
 		]
 	},
 	"2COR": {
 		"name": "2 Corinthians",
-		"aliases": [
-			"2 Cor",
-			"2nd Cor",
-			"2nd Corinthians",
-			"Second Corinthians"
+		"aliases": [],
+		"groups": [
+			"NT"
 		]
 	},
 	"GALA": {
 		"name": "Galatians",
-		"aliases": [
-			"Gal"
+		"aliases": [],
+		"groups": [
+			"NT"
 		]
 	},
 	"EPHE": {
 		"name": "Ephesians",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"PHIL": {
 		"name": "Philippians",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"COLO": {
 		"name": "Colossians",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"1THE": {
 		"name": "1 Thessalonians",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"2THE": {
 		"name": "2 Thessalonians",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"1TIM": {
 		"name": "1 Timothy",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"2TIM": {
 		"name": "2 Timothy",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"TITU": {
 		"name": "Titus",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"PHIL": {
 		"name": "Philemon",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"HEBR": {
 		"name": "Hebrews",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"JAME": {
 		"name": "James",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"1PET": {
 		"name": "1 Peter",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"2PET": {
 		"name": "2 Peter",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"1JOH": {
 		"name": "1 John",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"2JOH": {
 		"name": "2 John",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"3JOH": {
 		"name": "3 John",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"JUDE": {
 		"name": "Jude",
-		"aliases": []
+		"aliases": [],
+		"groups": [
+			"NT"
+		]
 	},
 	"REVE": {
 		"name": "Revelation",
 		"aliases": [
 			"The Apocalypse"
+		],
+		"groups": [
+			"NT"
 		]
 	}
 };

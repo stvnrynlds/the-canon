@@ -4,24 +4,38 @@
 	import books from "./data";
 	import { onMount } from "svelte";
 
-	const gospels = ['MATT', 'MARK', 'LUKE', 'JOHN'];
+	const gospels = ['GENE', '1SAM', 'LUKE', 'JOHN', 'ACTS', 'ROMA'];
+
 	
 </script>
 
 <main>
 <h1>The Canons</h1>
-	<h2>Old Testament</h2>
+	<h2>Gospels</h2>
+
 	{#each gospels as gospel}
 		<li>{books[gospel].name}</li>
 	{/each}
-	<button>Show Only Old Testament</button>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+
+	<h2>Apocrypha</h2>
+	{#each gospels as gospel}
+		<li>{books[gospel].name}
+		{#if books[gospel].aliases.length}<span>({#each books[gospel].aliases as alias, i}{alias}{/each})</span>
+		{/if}
+		</li>
+
+	{/each}
+
+
 </main>
 
 <style>
+
+	span {
+		color: gray;
+		display: inline-block;
+	}
 	main {
-		text-align: center;
 		padding: 1em;
 		margin: 0 auto;
 	}
